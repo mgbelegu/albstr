@@ -79,16 +79,82 @@ p {
 /*MAIN SECTIONS*/
 #about,
 #blog,
-#projects {
+#projects,
+#contact {
   position: relative;
   z-index: -1;
   height: 74px;
   margin-top: -74px;
 }
 #sectionTwo {
-  background-color: gray;
+  background-color: #dddedf;
   padding-top: 6em;
   padding-bottom: 6em;
+}
+
+/*CONTACT*/
+.form-group {
+  padding: 0;
+}
+
+input.btn.btn-primary {
+  font-size: 18px;
+  background-color: #cc0000 !important;
+  border: 2px solid #cc0000;
+  box-sizing: border-box;
+}
+
+input.btn.btn-primary:hover {
+  background-color: white !important;
+  color: #cc0000;
+}
+
+#sectionFour {
+  background-color: #dddedf;
+}
+
+#sectionFour h1 {
+  color: white;
+}
+
+input {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.text-danger {
+  margin-top: 1rem;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  color: inherit;
+  background-color: white;
+}
+
+input[type="email"] {
+  color: inherit;
+  background-color: white;
+}
+
+input[type="email"]:focus {
+  color: inherit;
+  background-color: white;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  color: inherit !important;
+  background-color: white !important;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  color: inherit;
+  background-color: white;
 }
 
 /*FOOTER*/
