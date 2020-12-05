@@ -1,0 +1,145 @@
+/*GENERAL*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0 64px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/*NAVBAR*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 75px;
+  background-color: white !important;
+  padding: 16px 32px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+.nav-link {
+  background-color: white;
+  padding: 12px !important;
+}
+
+/*HEADER*/
+#header-image {
+  margin-top: 75px;
+  height: 550px;
+  background-color: gray;
+}
+
+#header-image h1 {
+  font-weight: bold;
+  padding-top: 205px;
+}
+
+#header-image p {
+  margin-bottom: 48px;
+}
+
+.a-button {
+  border-radius: 2px;
+  margin-top: 22px;
+  padding: 16px 16px;
+  background-color: white;
+  color: black;
+  transition: all 200ms linear;
+}
+
+.a-button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+/*MAIN SECTIONS*/
+#about,
+#blog,
+#projects {
+  position: relative;
+  z-index: -1;
+  height: 74px;
+  margin-top: -74px;
+}
+#sectionTwo {
+  background-color: gray;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+footer a {
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.socialLink {
+  padding-right: 16px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  #header-image {
+    padding: 0 15px;
+  }
+  .row {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    height: auto;
+  }
+  .navbar-brand {
+    padding: 12px;
+  }
+
+  .navbar-toggler {
+    margin-right: 12px;
+  }
+
+  .nav-link {
+    background-color: white;
+    padding: 12px !important;
+  }
+}
