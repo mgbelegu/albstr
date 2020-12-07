@@ -5,6 +5,55 @@ $(document).ready(function () {
       $(".nav-link").not(this).removeClass("active");
     }
   });
+  var homeOffset = $("#home").offset().top;
+  var aboutOffset = $("#about").offset().top - 1;
+  var servicesOffset = $("#services").offset().top - 1;
+  var projectsOffset = $("#projects").offset().top - 1;
+  var contactOffset = $("#contact").offset().top - 1;
+
+  $(function () {
+    $(window).scroll(function () {
+      if ($(window).scrollTop() >= homeOffset) {
+        $("#navHome").addClass("active");
+        $("#navAbout").removeClass("active");
+        $("#navServices").removeClass("active");
+        $("#navProjects").removeClass("active");
+        $("#navContact").removeClass("active");
+      }
+
+      if ($(window).scrollTop() >= aboutOffset) {
+        $("#navAbout").addClass("active");
+        $("#navHome").removeClass("active");
+        $("#navServices").removeClass("active");
+        $("#navProjects").removeClass("active");
+        $("#navContact").removeClass("active");
+      }
+
+      if ($(window).scrollTop() >= servicesOffset) {
+        $("#navServices").addClass("active");
+        $("#navAbout").removeClass("active");
+        $("#navHome").removeClass("active");
+        $("#navProjects").removeClass("active");
+        $("#navContact").removeClass("active");
+      }
+
+      if ($(window).scrollTop() >= projectsOffset) {
+        $("#navProjects").addClass("active");
+        $("#navAbout").removeClass("active");
+        $("#navServices").removeClass("active");
+        $("#navHome").removeClass("active");
+        $("#navContact").removeClass("active");
+      }
+
+      if ($(window).scrollTop() >= contactOffset) {
+        $("#navContact").addClass("active");
+        $("#navAbout").removeClass("active");
+        $("#navServices").removeClass("active");
+        $("#navProjects").removeClass("active");
+        $("#navHome").removeClass("active");
+      }
+    });
+  });
 });
 
 /*var homeOffset = $("#home").offset().top;
