@@ -11,6 +11,11 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/abb4885a60.js"
       crossorigin="anonymous"
@@ -21,7 +26,7 @@
     <!--NAVBAR-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">ALBSTRUKTUR</a>
+        <a class="navbar-brand" href="index.html">ALBSTRUKTUR</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,19 +41,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link active" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#services">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
             <!--
             <li class="nav-item dropdown">
@@ -78,45 +83,136 @@
 
     <!--MAIN CONTENT-->
     <main>
-      <div id="header-image" class="text-center">
-        <h1>LOREM IPSUM TITLE</h1>
-        <p>
-          Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
-          paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
-        </p>
-        <a class="a-button" href="#" target="_blank" rel="noreferrer"
-          >Button Link</a
-        >
-      </div>
-
-      <div id="about"></div>
-
-      <div id="sectionOne" class="row py-5">
-        <div class="col-md-6 text-center py-5">
-          <h2>Welcome to website</h2>
-          <p>
+      <div id="header-image">
+        <div id="header-content">
+          <h1>ALBSTRUKTUR</h1>
+          <h3>
             Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
             paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
+          </h3>
+          <a class="a-button" href="#" target="_blank" rel="noreferrer"
+            >Our services</a
+          >
+          <a
+            id="contactButton"
+            class="a-button"
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+            >Contact us</a
+          >
+        </div>
+      </div>
+
+      <div id="sectionZero" class="row py-5">
+        <div class="col-md-6 text-center py-5">
+          <h2>Albstruktur - A construction company</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
           </p>
         </div>
         <div class="col-md-6 d-flex justify-content-center">
           <img
-            class="img-fluid"
-            src="https://via.placeholder.com/350"
+            class="img-fluid borderRad"
+            src="img/discussing-blueprint.jpg"
             alt="IMAGE"
             srcset=""
           />
         </div>
       </div>
 
-      <div id="blog"></div>
+      <div id="about"></div>
+      <div id="sectionOne" class="row py-5">
+        <div class="col-md-6 text-center py-5">
+          <h2>Albstruktur - A construction company</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            class="img-fluid borderRad"
+            src="img/discussing-blueprint.jpg"
+            alt="IMAGE"
+            srcset=""
+          />
+        </div>
+      </div>
+
       <div id="sectionTwo" class="row">
-        <div class="col text-center">
-          <h2>This is another title</h2>
+        <div id="gradientborder"></div>
+        <div class="col text-left">
+          <h2>WE PROVIDE DESIGN, IMPLEMENTATION AND CONSTRUCTION SERVICES</h2>
           <p>
             Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
             paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
           </p>
+        </div>
+      </div>
+
+      <div id="services"></div>
+      <div id="sectionThree0" class="py-5">
+        <div class="row py-5">
+          <div class="col text-center">
+            <h2>Our services</h2>
+            <p>
+              Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
+              paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-4 text-center">
+            <div class="serviceCard">
+              <h3>Design</h3>
+              <img
+                class="img-fluid"
+                src="img/design.jpg"
+                alt="Project image"
+                srcset=""
+              />
+              <p class="pt-4">
+                Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
+                paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="serviceCard">
+              <h3>Implementation</h3>
+              <img
+                class="img-fluid"
+                src="img/implementation.jpg"
+                alt="Project image"
+                srcset=""
+              />
+              <p class="pt-4">
+                Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
+                paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="serviceCard">
+              <h3>Construction</h3>
+              <img
+                class="img-fluid"
+                src="img/construction.jpg"
+                alt="Project image"
+                srcset=""
+              />
+              <p class="pt-4">
+                Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
+                paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -132,7 +228,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 text-center pb-5">
+          <div class="col-lg-4 text-center pb-5">
             <h3>Project 1</h3>
             <img
               class="img-fluid"
@@ -145,7 +241,7 @@
               paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
             </p>
           </div>
-          <div class="col-md-4 text-center pb-5">
+          <div class="col-lg-4 text-center pb-5">
             <h3>Project 2</h3>
             <img
               class="img-fluid"
@@ -158,7 +254,7 @@
               paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
             </p>
           </div>
-          <div class="col-md-4 text-center pb-5">
+          <div class="col-lg-4 text-center pb-5">
             <h3>Project 3</h3>
             <img
               class="img-fluid"
@@ -290,12 +386,12 @@
       </div>
       <div class="row pt-5">
         <div class="col">
-          <p class="text-center">
+          <p id="footerP" class="text-center">
             Copyright &copy;
             <script>
               document.write(new Date().getFullYear());
             </script>
-            Company Name
+            Xpert Systems
           </p>
         </div>
       </div>
@@ -319,6 +415,7 @@
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="js/contact_me.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script>
       AOS.init();
     </script>

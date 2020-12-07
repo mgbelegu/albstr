@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +15,7 @@ body {
 
 .row {
   margin: 0;
-  padding: 0 64px;
+  padding: 0 128px;
 }
 
 p {
@@ -28,7 +29,7 @@ p {
   width: 100%;
   z-index: 10;
   height: 75px;
-  background-color: white !important;
+  background-color: black !important;
   padding: 16px 32px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.33);
@@ -41,44 +42,86 @@ p {
 }
 
 .nav-link {
-  background-color: white;
+  color: white !important;
+  background-color: black;
+  font-weight: bold;
   padding: 12px !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #cc0000 !important;
+}
+
+.navbar-toggler {
+  border: 0px !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
 }
 
 /*HEADER*/
 #header-image {
   margin-top: 75px;
-  height: 550px;
-  background-color: gray;
+  height: 850px;
+  background-image: url(../img/pointing-sketch.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
 }
 
-#header-image h1 {
+#header-content {
+  padding: 400px 128px;
+  width: 70%;
+}
+
+#header-content h1 {
+  font-size: 48px;
   font-weight: bold;
-  padding-top: 205px;
+  color: white;
 }
 
-#header-image p {
+#header-content h3 {
   margin-bottom: 48px;
+  color: white;
 }
 
 .a-button {
   border-radius: 2px;
   margin-top: 22px;
-  padding: 16px 16px;
+  padding: 16px 48px;
   background-color: white;
+  border: 2px solid black;
   color: black;
+  font-size: 18px;
   transition: all 200ms linear;
+}
+
+#contactButton {
+  text-decoration: none;
+  color: white !important;
+  background-color: #cc0000 !important;
 }
 
 .a-button:hover {
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #cc0000;
+}
+
+.borderRad {
+  border-radius: 24px !important;
 }
 
 /*MAIN SECTIONS*/
 #about,
-#blog,
+#services,
 #projects,
 #contact {
   position: relative;
@@ -87,12 +130,53 @@ p {
   margin-top: -74px;
 }
 #sectionOne {
-  padding: 6rem 0 !important;
+  padding: 6rem !important;
+  padding-left: 128px !important;
+  padding-right: 128px !important;
 }
 #sectionTwo {
-  background-color: #dddedf;
+  background-image: url(../img/construction-silhouette.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
   padding-top: 6em;
   padding-bottom: 6em;
+  color: white;
+}
+
+#gradientborder {
+  width: 12px !important;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(204, 0, 0, 1) 100%
+  );
+}
+
+#sectionThree {
+  background-color: #f3f3f3;
+}
+
+.serviceCard {
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  margin-bottom: 32px;
+  border-radius: 24px;
+  transition: all 200ms ease-in-out;
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+}
+
+.serviceCard img {
+  border-radius: 24px;
+}
+
+.serviceCard h3 {
+  margin-bottom: 32px;
 }
 
 /*CONTACT*/
@@ -102,21 +186,27 @@ p {
 
 input.btn.btn-primary {
   font-size: 18px;
-  background-color: #cc0000 !important;
-  border: 2px solid #cc0000;
+  color: black;
+  background-color: white !important;
+  border: 2px solid black;
   box-sizing: border-box;
+  border-radius: 0px !important;
 }
 
 input.btn.btn-primary:hover {
-  background-color: white !important;
-  color: #cc0000;
+  background-color: #cc0000 !important;
+  color: white;
 }
 
 #sectionFour {
-  background-color: #dddedf;
+  background-image: url(../img/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.75);
 }
 
-#sectionFour h1 {
+#sectionFour {
   color: white;
 }
 
@@ -134,17 +224,18 @@ textarea {
 
 input[type="text"] {
   border: 1px solid #ccc;
-  color: inherit;
+  color: black;
   background-color: white;
+  border-radius: 0px !important;
 }
 
 input[type="email"] {
-  color: inherit;
+  color: black;
   background-color: white;
 }
 
 input[type="email"]:focus {
-  color: inherit;
+  color: black;
   background-color: white;
 }
 
@@ -154,13 +245,14 @@ input[type="submit"] {
 
 textarea {
   border: 1px solid #ccc;
-  color: inherit !important;
+  color: black !important;
   background-color: white !important;
+  border-radius: 0px !important;
 }
 
 input[type="text"]:focus,
 textarea:focus {
-  color: inherit;
+  color: black;
   background-color: white;
 }
 
@@ -185,6 +277,15 @@ footer a:hover {
   color: gray;
 }
 
+footer .row {
+  padding-left: 64px !important;
+  padding-right: 64px !important;
+}
+
+#footerP {
+  font-size: 12px;
+}
+
 .socialLink {
   padding-right: 16px;
   font-size: 24px;
@@ -196,6 +297,11 @@ footer a:hover {
   }
   .row {
     padding: 0 15px;
+  }
+  #sectionOne {
+    padding: 6rem !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
