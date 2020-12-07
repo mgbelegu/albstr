@@ -6,11 +6,11 @@ $(document).ready(function () {
     }
   });
 
-  var homeOffset = $("#home").offset().top - 50;
-  var aboutOffset = $("#about").offset().top - 50;
-  var servicesOffset = $("#services").offset().top - 50;
-  var projectsOffset = $("#projects").offset().top - 50;
-  var contactOffset = $("#contact").offset().top - 50;
+  var homeOffset = $("#home").offset().top;
+  var aboutOffset = $("#about").offset().top;
+  var servicesOffset = $("#services").offset().top;
+  var projectsOffset = $("#projects").offset().top;
+  var contactOffset = $("#contact").offset().top;
 
   $(function () {
     $(window).scroll(function () {
