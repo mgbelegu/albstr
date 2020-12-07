@@ -5,11 +5,12 @@ $(document).ready(function () {
       $(".nav-link").not(this).removeClass("active");
     }
   });
-  var homeOffset = $("#home").offset().top;
-  var aboutOffset = $("#about").offset().top - 1;
-  var servicesOffset = $("#services").offset().top - 1;
-  var projectsOffset = $("#projects").offset().top - 1;
-  var contactOffset = $("#contact").offset().top - 1;
+
+  var homeOffset = $("#home").offset().top - 50;
+  var aboutOffset = $("#about").offset().top - 50;
+  var servicesOffset = $("#services").offset().top - 50;
+  var projectsOffset = $("#projects").offset().top - 50;
+  var contactOffset = $("#contact").offset().top - 50;
 
   $(function () {
     $(window).scroll(function () {
