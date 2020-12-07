@@ -25,7 +25,7 @@
   <body>
     <!--NAVBAR-->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <a class="navbar-brand" href="index.html">ALBSTRUKTUR</a>
         <button
           class="navbar-toggler"
@@ -36,7 +36,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i id="hamburger" class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -90,43 +90,42 @@
             Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
             paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
           </h3>
-          <a class="a-button" href="#" target="_blank" rel="noreferrer"
-            >Our services</a
-          >
-          <a
-            id="contactButton"
-            class="a-button"
-            href="#"
-            target="_blank"
-            rel="noreferrer"
-            >Contact us</a
-          >
+          <div id="ctaButtons" class="d-flex">
+            <a class="a-button" href="#services">Our services</a>
+            <a id="contactButton" class="a-button" href="#contact"
+              >Contact us</a
+            >
+          </div>
         </div>
       </div>
 
-      <div id="sectionZero" class="row py-5">
-        <div class="col-md-6 text-center py-5">
-          <h2>Albstruktur - A construction company</h2>
+      <div id="sectionZero" class="row pb-5">
+        <div class="col-lg-4 characteristics text-center">
+          <h4>Quality constructions</h4>
+          <img src="img/quality.png" alt="" />
           <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean.
+            We provide high quality service from design and implementation to
+            the construction phase.
           </p>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <img
-            class="img-fluid borderRad"
-            src="img/discussing-blueprint.jpg"
-            alt="IMAGE"
-            srcset=""
-          />
+        <div class="col-lg-4 characteristicsBlack text-center">
+          <h4>Professionalism</h4>
+          <img src="img/professional.png" alt="" />
+          <p>We are a company with a professional and experienced staff.</p>
+        </div>
+        <div class="col-lg-4 characteristics text-center">
+          <h4>Dedicated to clients</h4>
+          <img src="img/dedicated.png" alt="" />
+          <p>
+            We dedicate all our energy and creativity to fulfill our client's
+            needs.
+          </p>
         </div>
       </div>
 
       <div id="about"></div>
       <div id="sectionOne" class="row py-5">
-        <div class="col-md-6 text-center py-5">
+        <div class="col-lg-6 py-5">
           <h2>Albstruktur - A construction company</h2>
           <p>
             Far far away, behind the word mountains, far from the countries
@@ -135,9 +134,9 @@
             language ocean.
           </p>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
+        <div class="col-lg-6">
           <img
-            class="img-fluid borderRad"
+            class="img-fluid"
             src="img/discussing-blueprint.jpg"
             alt="IMAGE"
             srcset=""
@@ -168,49 +167,52 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-4 text-center">
+          <div class="col-xl-4 text-center">
             <div class="serviceCard">
-              <h3>Design</h3>
               <img
-                class="img-fluid"
+                class="img-fluid pb-4"
                 src="img/design.jpg"
                 alt="Project image"
                 srcset=""
               />
-              <p class="pt-4">
+              <h3>Design</h3>
+              <p class="mb-5">
                 Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
                 paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
               </p>
+              <a class="a-button" href="">Read more</a>
             </div>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-xl-4 text-center">
             <div class="serviceCard">
-              <h3>Implementation</h3>
               <img
-                class="img-fluid"
+                class="img-fluid pb-4"
                 src="img/implementation.jpg"
                 alt="Project image"
                 srcset=""
               />
-              <p class="pt-4">
+              <h3>Implementation</h3>
+              <p class="mb-5">
                 Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
                 paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
               </p>
+              <a class="a-button" href="">Read more</a>
             </div>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-xl-4 text-center">
             <div class="serviceCard">
-              <h3>Construction</h3>
               <img
-                class="img-fluid"
+                class="img-fluid pb-4"
                 src="img/construction.jpg"
                 alt="Project image"
                 srcset=""
               />
-              <p class="pt-4">
+              <h3>Construction</h3>
+              <p class="mb-5">
                 Lorem ipsum paragpraph. Lorem ipsum paragpraph. Lorem ipsum
                 paragpraph. Lorem ipsum paragpraph. Lorem ipsum paragpraph.
               </p>
+              <a class="a-button" href="">Read more</a>
             </div>
           </div>
         </div>
