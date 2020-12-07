@@ -22,6 +22,10 @@ p {
   font-size: 16px;
 }
 
+.subheading {
+  width: 75%;
+  margin: 0 auto;
+}
 /*NAVBAR*/
 .navbar {
   position: fixed;
@@ -387,8 +391,12 @@ footer .row {
   }
 
   .a-button {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 6px;
+  }
+
+  input.btn.btn-primary {
+    font-size: 14px;
   }
 }
 
@@ -402,6 +410,9 @@ footer .row {
   }
   .a-button {
     text-align: center;
+  }
+  .subheading {
+    width: 100%;
   }
 }
 
