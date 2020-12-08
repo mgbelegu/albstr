@@ -6,11 +6,11 @@ $(document).ready(function () {
     }
   });
 
-  var homeOffset = $("#top").offset().top - 100;
-  var aboutOffset = $("#about").offset().top - 100;
-  var servicesOffset = $("#services").offset().top - 100;
-  var projectsOffset = $("#projects").offset().top - 100;
-  var contactOffset = $("#contact").offset().top - 100;
+  var homeOffset = $("#top").offset().top - 200;
+  var aboutOffset = $("#about").offset().top - 200;
+  var servicesOffset = $("#services").offset().top - 200;
+  var projectsOffset = $("#projects").offset().top - 200;
+  var contactOffset = $("#contact").offset().top - 200;
   var executed = false;
 
   $(function () {
@@ -74,6 +74,51 @@ $(document).ready(function () {
         $("#navHome").removeClass("active");
       }
     });
+  });
+
+  $("#navHome").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#home").offset().top,
+      },
+      300
+    );
+  });
+
+  $("#navAbout").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#about").offset().top,
+      },
+      300
+    );
+  });
+
+  $("#navServices").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#services").offset().top,
+      },
+      300
+    );
+  });
+
+  $("#navProjects").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#projects").offset().top,
+      },
+      300
+    );
+  });
+
+  $("#navContact").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#contact").offset().top,
+      },
+      300
+    );
   });
 });
 
