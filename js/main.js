@@ -11,6 +11,7 @@ $(document).ready(function () {
   var servicesOffset = $("#services").offset().top - 100;
   var projectsOffset = $("#projects").offset().top - 100;
   var contactOffset = $("#contact").offset().top - 100;
+  var executed = false;
 
   $(function () {
     $(window).scroll(function () {
@@ -37,21 +38,24 @@ $(document).ready(function () {
         $("#navProjects").removeClass("active");
         $("#navContact").removeClass("active");
         $(".counter-count").each(function () {
-          $(this)
-            .prop("Counter", 0)
-            .animate(
-              {
-                Counter: $(this).text(),
-              },
-              {
-                duration: 5000,
-                easing: "swing",
-                step: function (now) {
-                  $(this).text(Math.ceil(now));
+          if (executed === false) {
+            $(this)
+              .prop("Counter", 0)
+              .animate(
+                {
+                  Counter: $(this).text(),
                 },
-              }
-            );
+                {
+                  duration: 5000,
+                  easing: "swing",
+                  step: function (now) {
+                    $(this).text(Math.ceil(now));
+                  },
+                }
+              );
+          }
         });
+        executed = true;
       }
 
       if ($(window).scrollTop() >= projectsOffset) {
