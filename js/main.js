@@ -36,6 +36,22 @@ $(document).ready(function () {
         $("#navHome").removeClass("active");
         $("#navProjects").removeClass("active");
         $("#navContact").removeClass("active");
+        $(".counter-count").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
       }
 
       if ($(window).scrollTop() >= projectsOffset) {
@@ -54,23 +70,6 @@ $(document).ready(function () {
         $("#navHome").removeClass("active");
       }
     });
-  });
-
-  $(".counter-count").each(function () {
-    $(this)
-      .prop("Counter", 0)
-      .animate(
-        {
-          Counter: $(this).text(),
-        },
-        {
-          duration: 5000,
-          easing: "swing",
-          step: function (now) {
-            $(this).text(Math.ceil(now));
-          },
-        }
-      );
   });
 });
 
