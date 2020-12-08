@@ -120,6 +120,15 @@ $(document).ready(function () {
       300
     );
   });
+
+  $("#contactButton").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#contact").offset().top,
+      },
+      300
+    );
+  });
 });
 
 /*var homeOffset = $("#home").offset().top;
