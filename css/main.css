@@ -324,17 +324,9 @@ footer .row {
   font-size: 24px;
 }
 
-@media (max-width: 768px) {
-  #header-image {
-    padding: 0 15px;
-  }
-  .row {
-    padding: 0 15px;
-  }
-  #sectionOne {
-    padding: 6rem !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+@media (max-width: 1150px) {
+  #rowServices {
+    padding: 0 64px;
   }
 }
 
@@ -400,6 +392,24 @@ footer .row {
   }
 }
 
+@media (max-width: 768px) {
+  #header-image {
+    padding: 0 15px;
+  }
+  .row {
+    padding: 0 15px;
+  }
+  #sectionOne {
+    padding: 6rem !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  footer .row {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
 @media (max-width: 525px) {
   #header-content {
     text-align: center;
@@ -413,6 +423,9 @@ footer .row {
   }
   .subheading {
     width: 100%;
+  }
+  #rowServices {
+    padding: 0 16px;
   }
 }
 
