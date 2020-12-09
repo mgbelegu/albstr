@@ -1,0 +1,14 @@
+#sectionOneProject {
+  padding: 6rem;
+}
+
+@media (max-width: 525px) {
+  #sectionOneProject {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+#projects {
+  z-index: 10;
+}
