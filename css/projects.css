@@ -2,13 +2,41 @@
   padding: 6rem;
 }
 
+#projects {
+  z-index: 10;
+}
+
+#proj1 {
+  background-color: #f3f3f3;
+  padding-bottom: 6rem !important;
+  padding-top: 6rem !important;
+}
+
+#proj2 {
+  padding-bottom: 6rem !important;
+  padding-top: 6rem !important;
+}
+
+#proj3 {
+  background-color: #f3f3f3;
+  padding-bottom: 6rem !important;
+  padding-top: 6rem !important;
+}
+
+@media (max-width: 768px) {
+  .imgProject {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  #proj2 {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 525px) {
   #sectionOneProject {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
-}
-
-#projects {
-  z-index: 10;
 }
