@@ -54,7 +54,7 @@ p {
 }
 
 .nav-link:hover {
-  color: #cc0000 !important;
+  color: #bf0000 !important;
 }
 
 .navbar-brand {
@@ -63,7 +63,7 @@ p {
 }
 
 .nav-link.active {
-  color: #cc0000 !important;
+  color: #bf0000 !important;
 }
 
 .navbar-toggler {
@@ -128,13 +128,13 @@ p {
 #contactButton {
   text-decoration: none;
   color: white !important;
-  background-color: #cc0000 !important;
+  background-color: #bf0000 !important;
 }
 
 .a-button:hover {
   text-decoration: none;
   color: white;
-  background-color: #cc0000;
+  background-color: #bf0000;
 }
 
 .borderRad {
@@ -158,7 +158,7 @@ p {
 }
 
 .characteristics {
-  background-color: #cc0000;
+  background-color: #bf0000;
   padding: 32px;
 }
 
@@ -250,7 +250,7 @@ input.btn.btn-primary {
 }
 
 input.btn.btn-primary:hover {
-  background-color: #cc0000 !important;
+  background-color: #bf0000 !important;
   color: white;
 }
 
@@ -330,7 +330,7 @@ footer a {
 
 footer a:hover {
   text-decoration: none;
-  color: #cc0000;
+  color: #bf0000;
 }
 
 footer .row {
@@ -467,7 +467,7 @@ footer .row {
 
 .counter-count {
   font-size: 24px;
-  background-color: #cc0000;
+  background-color: #bf0000;
   border-radius: 50%;
   position: relative;
   color: #ffffff;
