@@ -9,7 +9,7 @@ $(document).ready(function () {
   var homeOffset = $("#top").offset().top - 200;
   var aboutOffset = $("#about").offset().top - 200;
   var servicesOffset = $("#services").offset().top - 200;
-  var projectsOffset = $("#projects").offset().top - 200;
+  //var projectsOffset = $("#projects").offset().top - 200;
   var contactOffset = $("#contact").offset().top - 200;
   var statsOffset = $("#numberRow").offset().top - 200;
   var executed = false;
@@ -81,13 +81,13 @@ $(document).ready(function () {
         executed = true;
       }
 
-      if ($(window).scrollTop() >= projectsOffset) {
+      /*if ($(window).scrollTop() >= projectsOffset) {
         $("#navProjects").addClass("active");
         $("#navAbout").removeClass("active");
         $("#navServices").removeClass("active");
         $("#navHome").removeClass("active");
         $("#navContact").removeClass("active");
-      }
+      }*/
 
       if ($(window).scrollTop() >= contactOffset) {
         $("#navContact").addClass("active");
@@ -126,14 +126,14 @@ $(document).ready(function () {
     );
   });
 
-  $("#navProjects").click(function () {
+  /*$("#navProjects").click(function () {
     $("html, body").animate(
       {
         scrollTop: $("#projects").offset().top,
       },
       300
     );
-  });
+  });*/
 
   $("#navContact").click(function () {
     $("html, body").animate(
